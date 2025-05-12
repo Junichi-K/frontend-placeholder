@@ -10,6 +10,8 @@ import { DocumentProvider } from "@/context/DocumentContext";
 import { SearchCommand } from "@/components/search-command";
 import { UpdateNavbarProvider } from "@/context/update-navbar-context";
 import { ToolbarProvider } from "@/context/update-toolbar-context";
+import { Navbar } from "./_components/Navbar";
+import { CoverImageUpdateProvider } from "@/context/update-cover-image";
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
     const { user, setUser, isAuthenticated } = useUser();
@@ -58,13 +60,15 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
             <DocumentProvider>
                 <UpdateNavbarProvider>
                     <ToolbarProvider>
-                        <div className="h-full flex text-gray-200">
-                            <Navigation />
-                            <main className="flex-1 h-full overflow-y-auto">
-                                <SearchCommand/>
-                                {children}
-                            </main>
-                        </div>
+                        <CoverImageUpdateProvider>
+                            <div className="h-full flex text-gray-200">
+                                <Navigation />
+                                <main className="flex-1 h-full overflow-y-auto">
+                                    <SearchCommand/>
+                                    {children}
+                                </main>
+                            </div>
+                        </CoverImageUpdateProvider>
                     </ToolbarProvider>
                 </UpdateNavbarProvider>
             </DocumentProvider>

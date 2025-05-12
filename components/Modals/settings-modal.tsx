@@ -41,12 +41,12 @@ export const SettingsModal = ({
                         <span className="text-muted-foreground font-semibold">
                             While the settings panel is currently empty, we plan to introduce a 
                             <span className="text-pink-500 font-bold italic animate-pulse hue-rotate-animation inline-block">
-                                BRAINROT
+                                FUTURISTIC
                             </span>
                             <span className="text-yellow-400 font-semibold"> THEME </span>
-                            <span className="text-blue-500 text-lg font-black" style={{ fontFamily: '"Comic Sans MS", "Papyrus", cursive' }}>
+                            {/*<span className="text-blue-500 text-lg font-black" style={{ fontFamily: '"Comic Sans MS", "Papyrus", cursive' }}>
                                 SkibidiSigma🐺🥶
-                            </span>
+                            </span>*/}
                         </span>
                     </AlertDialogDescription>
                 </AlertDialogHeader>

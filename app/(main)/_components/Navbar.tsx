@@ -100,6 +100,7 @@ export const Navbar = ({
             </nav>
 
             {document?.isArchived && !didRestore && (
+                
                 <Banner
                     documentId={document?.id} // Pass didRestore to Banner to manage visibility
                                               // Pass the handler for successful restore

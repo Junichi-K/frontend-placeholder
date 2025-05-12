@@ -41,7 +41,7 @@ export const Navigation = () => {
 
     const fetchDocuments = async () => {
         try {
-            const res = await fetch("http://localhost:8080/document", {
+            const res = await fetch("http://localhost:8080/documents", {
                 method: "GET",
                 credentials: "include",
             });

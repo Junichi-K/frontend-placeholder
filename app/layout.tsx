@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { UserProvider } from "@/context/UserContext"; // ⬅️ import the provider
 import { Toaster } from "sonner";
+import { EdgeStoreProvider } from "@/lib/edgestore";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,8 +38,10 @@ export default function RootLayout({
       >
         <Toaster position="bottom-center" />
         <UserProvider>
+          <EdgeStoreProvider>
           {/* Remove the max-w wrapper for now */}
           {children}
+          </EdgeStoreProvider>
         </UserProvider>
       </body>
     </html>

@@ -41,7 +41,7 @@ export const AuthNavbar = () => {
             {isAuthenticated && user ? (
                 <div className="flex items-center gap-x-2">
                     <Image src={user?.picture ?? "/default_user.png"} alt="Profile" width={40} height={40} className="rounded-full border-2 border-white" />
-                    {/*I have to add a fucking modal that opens which shows 2 options 1) Signout and 2) Manage account*/}
+                    {/*I have to add a modal that opens which shows 2 options 1) Signout and 2) Manage account*/}
                 </div>
             ) : (
                 <>

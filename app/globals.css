@@ -105,3 +105,11 @@ body {
   animation: hue-rotate 4s infinite linear;
 }
 
+.blocknote-wrapper .blocknote-editor {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.blocknote-wrapper .blocknote-content {
+  background-color: transparent !important;
+}
